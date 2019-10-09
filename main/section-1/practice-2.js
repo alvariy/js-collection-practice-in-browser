@@ -2,15 +2,15 @@
 
 function collectSameElements(collectionA, collectionB) {
 
-  var collectionC = [];
+  // var collectionC = [];
 
-  for(let i = 0; i < collectionA.length; i++)
-  {
-    if(collectionB[0].includes(collectionA[i]))
-    {
-        collectionC.push(collectionA[i]);
-    }
-  }
+  // for(let i = 0; i < collectionA.length; i++)
+  // {
+  //   if(collectionB[0].includes(collectionA[i]))
+  //   {
+  //       collectionC.push(collectionA[i]);
+  //   }
+  // }
 
-  return collectionC;
+  return collectionA.filter(n => collectionB[0].includes(n));
 }
